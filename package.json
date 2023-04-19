@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "watch": "tsc -w",
-    "dev": "nodemon .\\dist\\index.js",
-    "test": "jest"
+    "dev": "nodemon ./dist/index.js",
+    "test": "jest --detectOpenHandles --no-cache"
   },
   "dependencies": {
     "@types/jest": "^29.5.0",
