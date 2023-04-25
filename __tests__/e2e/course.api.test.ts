@@ -11,7 +11,7 @@ describe('/course', () => {
     })
 
     it('should return 200 and empty array', async () => {
-       await request(app)
+        await request(app)
             .get('/courses')
             .expect(HTTP_STATUS.OK_200, [])
     })
@@ -64,7 +64,7 @@ describe('/course', () => {
             .post('/courses')
             .send(data)
             .expect(HTTP_STATUS.CREATED_201)
-        createdCourse2 =createResponse.body;
+        createdCourse2 = createResponse.body;
 
         expect(createdCourse2).toEqual({
             id: expect.any(Number),

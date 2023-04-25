@@ -1,8 +1,8 @@
 "use strict";
 var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
+    return (mod && mod.__esModule) ? mod : {"default": mod};
 };
-Object.defineProperty(exports, "__esModule", { value: true });
+Object.defineProperty(exports, "__esModule", {value: true});
 exports.getCourseViewModel = exports.db = exports.jsonBodyMiddleware = exports.HTTP_STATUS = exports.app = void 0;
 const express_1 = __importDefault(require("express"));
 exports.app = (0, express_1.default)();
@@ -16,10 +16,10 @@ exports.HTTP_STATUS = {
 exports.jsonBodyMiddleware = express_1.default.json();
 exports.db = {
     courses: [
-        { id: 1, title: 'front-end', studentsCount: 10 },
-        { id: 2, title: 'back-end', studentsCount: 10 },
-        { id: 3, title: 'automation qa', studentsCount: 10 },
-        { id: 4, title: 'devops', studentsCount: 10 }
+        {id: 1, title: 'front-end', studentsCount: 10},
+        {id: 2, title: 'back-end', studentsCount: 10},
+        {id: 3, title: 'automation qa', studentsCount: 10},
+        {id: 4, title: 'devops', studentsCount: 10}
     ]
 };
 const getCourseViewModel = (dbCourse) => {

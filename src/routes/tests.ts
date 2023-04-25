@@ -3,7 +3,6 @@ import {DBType} from "../db/db";
 import {HTTP_STATUS} from "../utils";
 
 
-
 export const getTestsRouter = (db: DBType) => {
     const router = express.Router()
     router.delete('/data', (req, res) => {
